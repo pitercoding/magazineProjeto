@@ -1,0 +1,1 @@
+Projeto de criação de um site dinâmico de vendas de roupas utilizando HTML, CSS e Javascript. Treinamento da Hashtag Programação. EN: Project to create a dynamic clothing sales website using HTML, CSS and Javascript.
