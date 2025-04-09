@@ -1,6 +1,8 @@
 Projeto de criação de um site dinâmico de vendas de roupas utilizando HTML, CSS e Javascript. Treinamento da Hashtag Programação. EN: Project to create a dynamic clothing sales website using HTML, CSS and Javascript.
 
 🛍️ Magazine Hashtag - Loja Online de Roupas
+\
+\
 Projeto de um e-commerce moderno para venda de roupas, com funcionalidades completas de carrinho, filtros de catálogo, finalização de pedido e histórico de compras.
 
 🚀 Funcionalidades
