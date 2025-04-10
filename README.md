@@ -16,7 +16,7 @@ Bem-vindo ao projeto de um **E-commerce Magazine** desenvolvido com **Tailwind C
 - **PostCSS**: Para a configuração e otimização do CSS.
 - **JavaScript**: Para a implementação das funcionalidades de interação e manipulação de dados.
 
-  ## 🔧 Como rodar o projeto
+## 🔧 Como rodar o projeto
 
 ### 1. Clone este repositório
 
