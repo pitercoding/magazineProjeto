@@ -1,39 +1,38 @@
 const catalogoProdutos = document.getElementById("container-produto");
 
 function exibirTodos() {
-    const produtosEscondidos = 
-    Array.from (catalogoProdutos.getElementsByClassName("hidden"));
+  const produtosEscondidos = catalogoProdutos.querySelectorAll(".hidden");
 
-    for (const produto of produtosEscondidos) {
-        produto.classList.remove('hidden');
-    }
+  produtosEscondidos.forEach(produto => {
+    produto.classList.remove("hidden");
+  });
 }
 
-function esconderMasculinos () {
-    exibirTodos();
-    const produtosMasculinos = 
-    Array.from(catalogoProdutos.getElementsByClassName('masculino'));
+function esconderPorClasse(classeParaEsconder) {
+  exibirTodos();
 
-    for(const produto of produtosMasculinos) {
-        produto.classList.add('hidden');
-    }
+  const produtosParaEsconder = catalogoProdutos.querySelectorAll(`.${classeParaEsconder}`);
+
+  produtosParaEsconder.forEach(produto => {
+    produto.classList.add("hidden");
+  });
 }
 
-function esconderFemininos () {
-    exibirTodos();
-    const produtosFemininos = 
-    Array.from(catalogoProdutos.getElementsByClassName('feminino'));
+function esconderFemininos() {
+  esconderPorClasse("feminino");
+}
 
-    for(const produto of produtosFemininos) {
-        produto.classList.add('hidden');
-    }
+function esconderMasculinos() {
+  esconderPorClasse("masculino");
 }
 
 export function inicializarFiltros() {
+  document.getElementById("exibir-todos")
+    .addEventListener("click", exibirTodos);
 
-   document.getElementById('exibir-todos').addEventListener("click", exibirTodos);
+  document.getElementById("exibir-masculino")
+    .addEventListener("click", esconderFemininos);
 
-   document.getElementById('exibir-masculino').addEventListener("click", esconderFemininos);
-
-   document.getElementById('exibir-femininos').addEventListener("click", esconderMasculinos);
+  document.getElementById("exibir-femininos")
+    .addEventListener("click", esconderMasculinos);
 }
