@@ -11,7 +11,7 @@ export default defineConfig({
   resolve: {
     alias: {
       // Alias para facilitar a importação de arquivos
-      '@': resolve(__dirname, 'src'),
+      '@': resolve(__dirname, './src'),
     },
   },
 
@@ -24,9 +24,9 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "index.html"), // Página principal
-        checkout: resolve(__dirname, "checkout.html"), // Página de checkout
-        pedidos: resolve(__dirname, "pedidos.html"), // Página de pedidos
+        main: resolve(__dirname, "./index.html"), // Página principal
+        checkout: resolve(__dirname, "./checkout.html"), // Página de checkout
+        pedidos: resolve(__dirname, "./pedidos.html"), // Página de pedidos
       },
     },
     // Você pode adicionar outras opções de build, como otimizações
