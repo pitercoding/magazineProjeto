@@ -4,7 +4,7 @@ import { defineConfig } from "vite";
 
 export default defineConfig({
   // Define o caminho base do projeto (mantenha se for necessário)
-  base: "/magazineProjeto/",
+  base: "/MagazineHashtag/",
 
   plugins: [],
 
@@ -24,9 +24,9 @@ export default defineConfig({
   build: {
     rollupOptions: {
       input: {
-        main: resolve(__dirname, "./index.html"), // Página principal
-        checkout: resolve(__dirname, "./checkout.html"), // Página de checkout
-        pedidos: resolve(__dirname, "./pedidos.html"), // Página de pedidos
+        main: resolve(__dirname, "index.html"), // Página principal
+        checkout: resolve(__dirname, "checkout.html"), // Página de checkout
+        pedidos: resolve(__dirname, "pedidos.html"), // Página de pedidos
       },
     },
     // Você pode adicionar outras opções de build, como otimizações
